@@ -13,6 +13,7 @@
 
 </head>
 <body class="body">
+    <form action="#" method="POST" id="websiteForm">
     
     <!-- Requirement gathering card -->
     <div class="container py-2">
@@ -89,7 +90,7 @@
         <label for="description" class="form-label fw-semibold">
             Business Description <span class="text-danger">*</span>
         </label>
-        <input type="text" name="description" id="description" class="form-control" placeholder="Your answer" required>
+        <textarea class="form-control" placeholder="Your answer" id="description"></textarea>
     </div>
     </div>
     </div>
@@ -102,7 +103,7 @@
             Business Addresses <span class="text-danger">*</span>
         </label>
         <p>If there are multiple addresses then seperate them with new lines</p>
-        <input type="text" name="address" id="address" class="form-control" placeholder="Your answer" required>
+        <textarea class="form-control" placeholder="Your answer" id="address"></textarea>
     </div>
     </div>
     </div>
@@ -115,7 +116,7 @@
             Business Phone Numbers <span class="text-danger">*</span>
         </label>
         <p>If there are multiple phone numbers then seperate them with coma (,)</p>
-        <input type="number" name="phone" id="phone" class="form-control" placeholder="Your answer" required>
+        <input type="text" name="phone" id="phone" class="form-control" placeholder="Your answer" required>
     </div>
     </div>
     </div>
@@ -169,7 +170,7 @@
         <label for="info" class="form-label fw-semibold">
             Product and Services Information <span class="text-danger">*</span>
         </label>
-        <input type="text" name="info" id="info" class="form-control" placeholder="Your answer" required>
+        <textarea class="form-control" placeholder="Your answer" id="info"></textarea>
     </div>
     </div>
     </div>
@@ -179,7 +180,7 @@
     <div class="card shadow">
     <div class="card-body p-4">
         <label for="certificate" class="form-label fw-semibold">Any Certifications to mention</label>
-        <input type="text" name="certificate" id="certificate" class="form-control" placeholder="Your answer">
+        <textarea class="form-control" placeholder="Your answer" id="certificate"></textarea>
     </div>
     </div>
     </div>
@@ -189,7 +190,7 @@
     <div class="card shadow">
     <div class="card-body p-4">
         <label for="team" class="form-label fw-semibold">Team Information</label>
-        <input type="text" name="team" id="team" class="form-control" placeholder="Your answer">
+        <textarea class="form-control" placeholder="Your answer" id="team"></textarea>
     </div>
     </div>
     </div>
@@ -199,7 +200,7 @@
     <div class="card shadow">
     <div class="card-body p-4">
         <label for="comp" class="form-label fw-semibold">Mention any competitors or their websites</label>
-        <input type="text" name="comp" id="comp" class="form-control" placeholder="Your answer">
+        <textarea class="form-control" placeholder="Your answer" id="comp"></textarea>
     </div>
     </div>
     </div>    
@@ -242,7 +243,7 @@
     <div class="card-body p-4">
         <label for="bword" class="form-label fw-semibold">Business Keywords</label>
         <p>These keywords will be used for SEO purpose</p>
-        <input type="text" name="bword" id="bword" class="form-control" placeholder="Your answer">
+        <textarea class="form-control" placeholder="Your answer" id="bword"></textarea>
     </div>
     </div>
     </div>
@@ -304,8 +305,9 @@
     <!-- Submit and clear button -->
     <div class="container py-2 mb-4 d-flex justify-content-between">
         <button class="btn btn-primary" type="submit" value="Submit">Submit</button>
-        <button class="btn btn-outline-primary" type="button">Clear form</button>
+        <button class="btn btn-outline-primary" type="reset">Clear form</button>
     </div>
 
+    </form>
 </body>
 </html>
