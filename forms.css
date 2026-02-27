@@ -1,0 +1,24 @@
+.body {
+    background-color: rgb(240, 235, 248);
+}
+
+.form-header {
+    background-color: rgb(103, 58, 183);
+    height: 8px;
+}
+
+/* 
+.form-range::-webkit-slider-runnable-track {
+    background-color: green;
+}
+
+.form-range::-webkit-slider-thumb {
+    background-color: transparent;
+} 
+*/
+
+.page {
+    background-color: green;
+    height: 10px;
+    width: 50%;
+}
