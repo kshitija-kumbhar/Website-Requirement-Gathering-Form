@@ -72,11 +72,11 @@
         <p class="fw-semibold">Is logo of your organisation available? <span class="text-danger">*</span></p>
         <p>If your business logo is available then please send it to info@aaradhyawebsolutions@gmail.com</p>
         <div class="form-check">
-        <input class="form-check-input" type="radio" id="radioDefault" name="logo">
+        <input class="form-check-input" type="radio" id="radioDefault" name="logo" value="Yes">
         <label class="form-check-label" for="radioDefault">Yes</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" id="radioDefault" name="logo">
+        <input class="form-check-input" type="radio" id="radioDefault" name="logo" value="No">
         <label class="form-check-label" for="radioDefault">No</label>
         </div>
     </div>
@@ -180,7 +180,7 @@
     <div class="card shadow">
     <div class="card-body p-4">
         <label for="certificate" class="form-label fw-semibold">Any Certifications to mention</label>
-        <textarea class="form-control" placeholder="Your answer" id="certificate"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="certificate" name="certificate"></textarea>
     </div>
     </div>
     </div>
@@ -190,7 +190,7 @@
     <div class="card shadow">
     <div class="card-body p-4">
         <label for="team" class="form-label fw-semibold">Team Information</label>
-        <textarea class="form-control" placeholder="Your answer" id="team"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="team" name="team"></textarea>
     </div>
     </div>
     </div>
@@ -200,7 +200,7 @@
     <div class="card shadow">
     <div class="card-body p-4">
         <label for="comp" class="form-label fw-semibold">Mention any competitors or their websites</label>
-        <textarea class="form-control" placeholder="Your answer" id="comp"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="comp" name="comp"></textarea>
     </div>
     </div>
     </div>    
@@ -243,7 +243,7 @@
     <div class="card-body p-4">
         <label for="bword" class="form-label fw-semibold">Business Keywords</label>
         <p>These keywords will be used for SEO purpose</p>
-        <textarea class="form-control" placeholder="Your answer" id="bword"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="bword" name="bword"></textarea>
     </div>
     </div>
     </div>
@@ -254,15 +254,15 @@
     <div class="card-body p-4">
         <p class="fw-semibold">By when can you provide product or service photos? <span class="text-danger">*</span></p>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="photos" id="radioDefault1">
+        <input class="form-check-input" type="radio" name="photos" id="radioDefault1" value="Within a week">
         <label class="form-check-label" for="radioDefault1">Within a week</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="photos" id="radioDefault2">
+        <input class="form-check-input" type="radio" name="photos" id="radioDefault2" value="Within a month">
         <label class="form-check-label" for="radioDefault2">Within a month</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="photos" id="radioDefault3">
+        <input class="form-check-input" type="radio" name="photos" id="radioDefault3" value="No photos">
         <label class="form-check-label" for="radioDefault3">I will not be able to provide photos. I fine with free images from internet.</label>
         </div>
     </div>
@@ -275,11 +275,11 @@
     <div class="card-body p-4">
         <p class="fw-semibold">Can you provide testimonies from your clients? <span class="text-danger">*</span></p>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="test" id="radioDefault1">
+        <input class="form-check-input" type="radio" name="test" id="radioDefault1" value="Yes">
         <label class="form-check-label" for="radioDefault1">Yes</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="test" id="radioDefault2">
+        <input class="form-check-input" type="radio" name="test" id="radioDefault2" value="No">
         <label class="form-check-label" for="radioDefault2">No</label>
         </div>
     </div>
