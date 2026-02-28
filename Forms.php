@@ -72,12 +72,12 @@
         <p class="fw-semibold">Is logo of your organisation available? <span class="text-danger">*</span></p>
         <p>If your business logo is available then please send it to info@aaradhyawebsolutions@gmail.com</p>
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="checkDefault">
-        <label class="form-check-label" for="checkDefault">Yes</label>
+        <input class="form-check-input" type="radio" id="radioDefault" name="logo">
+        <label class="form-check-label" for="radioDefault">Yes</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="checkbox" id="checkDefault">
-        <label class="form-check-label" for="checkDefault">No</label>
+        <input class="form-check-input" type="radio" id="radioDefault" name="logo">
+        <label class="form-check-label" for="radioDefault">No</label>
         </div>
     </div>
     </div>
@@ -90,7 +90,7 @@
         <label for="description" class="form-label fw-semibold">
             Business Description <span class="text-danger">*</span>
         </label>
-        <textarea class="form-control" placeholder="Your answer" id="description"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="description" name="bdesc"></textarea>
     </div>
     </div>
     </div>
@@ -103,7 +103,7 @@
             Business Addresses <span class="text-danger">*</span>
         </label>
         <p>If there are multiple addresses then seperate them with new lines</p>
-        <textarea class="form-control" placeholder="Your answer" id="address"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="address" name="baddress"></textarea>
     </div>
     </div>
     </div>
@@ -170,7 +170,7 @@
         <label for="info" class="form-label fw-semibold">
             Product and Services Information <span class="text-danger">*</span>
         </label>
-        <textarea class="form-control" placeholder="Your answer" id="info"></textarea>
+        <textarea class="form-control" placeholder="Your answer" id="info" name="PSinfo"></textarea>
     </div>
     </div>
     </div>
@@ -252,17 +252,17 @@
     <div class="container py-2">
     <div class="card shadow">
     <div class="card-body p-4">
-        <p class="fw-semibold">By when can you provide product or service photos?</p>
+        <p class="fw-semibold">By when can you provide product or service photos? <span class="text-danger">*</span></p>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+        <input class="form-check-input" type="radio" name="photos" id="radioDefault1">
         <label class="form-check-label" for="radioDefault1">Within a week</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+        <input class="form-check-input" type="radio" name="photos" id="radioDefault2">
         <label class="form-check-label" for="radioDefault2">Within a month</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault3">
+        <input class="form-check-input" type="radio" name="photos" id="radioDefault3">
         <label class="form-check-label" for="radioDefault3">I will not be able to provide photos. I fine with free images from internet.</label>
         </div>
     </div>
@@ -273,13 +273,13 @@
     <div class="container py-2">
     <div class="card shadow">
     <div class="card-body p-4">
-        <p class="fw-semibold">Can you provide testimonies from your clients?</p>
+        <p class="fw-semibold">Can you provide testimonies from your clients? <span class="text-danger">*</span></p>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1">
+        <input class="form-check-input" type="radio" name="test" id="radioDefault1">
         <label class="form-check-label" for="radioDefault1">Yes</label>
         </div>
         <div class="form-check">
-        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+        <input class="form-check-input" type="radio" name="test" id="radioDefault2">
         <label class="form-check-label" for="radioDefault2">No</label>
         </div>
     </div>
@@ -309,5 +309,12 @@
     </div>
 
     </form>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+    <!-- jQuery validation CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.21.0/jquery.validate.min.js"></script>
+    <!-- Js file -->
+    <script src="validation.js"></script>
 </body>
 </html>
