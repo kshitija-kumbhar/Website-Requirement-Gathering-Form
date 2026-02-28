@@ -13,7 +13,7 @@
 
 </head>
 <body class="body">
-    <form action="#" method="POST" id="websiteForm">
+    <form action="submit.php" method="POST" id="websiteForm">
     
     <!-- Requirement gathering card -->
     <div class="container py-2">

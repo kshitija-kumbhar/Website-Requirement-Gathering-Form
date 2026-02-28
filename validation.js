@@ -1,4 +1,10 @@
 $("#websiteForm").validate({
+    errorElement: "div",                   //Show error inside div - next line
+    errorClass: "text-danger",             //Bootstrap styling to show error in red
+    errorPlacement: function(error,element) {
+        error.insertAfter(element);       //To place error after input
+    },
+
     rules:{
         fullname: "required",
         orgname: "required",
@@ -51,7 +57,28 @@ $("#websiteForm").validate({
         },
     }, 
 
-    submitHandler: function(form) {
-        form.submit();
+    submitHandler: function(form) {   //Submit handler runs after validation is successful
+        // console.log("AJAX is running"); //To check default form submission
+        let submitBtn = $("button[type='submit']");  //Select submit button using jQuery
+        submitBtn.prop("disabled" , true).text("Submitting...");  //Prevent multiple submission
+
+        $.ajax({
+            url: $(form).attr("action"),  //url is to submit form to submit.php. jQuery to select form action.
+            type: "POST",
+            data: $(form).serialize(),   //It is use to convert form data properly.
+            success: function(response) {
+                if(response.trim() == "success"){  //If submit.php return success then this code will execute
+                    $("#websiteForm")[0].reset();
+                    alert("Form submitted successfully");
+                } else {    //If submit.php return error then this code will execute
+                    alert("Something went wrong");
+                    submitBtn.prop("disabled", false).text("Submit");
+                }
+            },
+            error: function() {    //This is for server errors
+                alert("Server error");
+                submitBtn.prop("disabled", false).text("Submit");
+            }
+        });
     }
 });
