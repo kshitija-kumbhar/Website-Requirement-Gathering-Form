@@ -2,23 +2,57 @@
     background-color: rgb(240, 235, 248);
 }
 
+/* To make cards width small*/
+#websiteForm {
+    max-width: 650px;
+    margin: auto;
+}
+
 .form-header {
     background-color: rgb(103, 58, 183);
     height: 8px;
 }
 
-/* 
-.form-range::-webkit-slider-runnable-track {
-    background-color: green;
+/* Purple color for borders of text input & textarea boxes */
+.form-control:focus, .form-check-input:focus{
+    border-color: rgb(103, 58, 183);
+    box-shadow: 0 0 0 0.25rem rgba(103, 58, 183, 0.25);
 }
 
-.form-range::-webkit-slider-thumb {
-    background-color: transparent;
-} 
-*/
+/* Purple color inside checkbox and radio buttons after they are checked*/
+.form-check-input:checked {
+    border-color: rgb(103, 58, 183);
+    background-color: rgb(103, 58, 183);
+}
 
-.page {
+/* Submit button purple color */
+.btn-primary {
+    background-color: rgb(103, 58, 183);
+    border-color: rgb(103, 58, 183);
+}
+
+.btn-primary:hover {
+    background-color: rgb(115, 74, 187);
+    border-color: rgb(103, 58, 183);
+}
+
+/* Reset button */
+.btn-outline-primary {
+    border-color: rgb(103, 58, 183);
+    color: rgb(103, 58, 183);
+}
+
+.btn-outline-primary:hover {
+    border-color: rgb(103, 58, 183);
+    color: rgb(103, 58, 183);
+    background-color: rgb(226, 210, 251);
+}
+
+/* Page 1 of 1 */
+.progress {
+    height: 8px;
+}
+.progress-bar {
+    width: 100%;
     background-color: green;
-    height: 10px;
-    width: 50%;
 }
