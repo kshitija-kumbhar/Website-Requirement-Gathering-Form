@@ -1,9 +1,9 @@
 <?php
-    session_start();
+    session_start();    //It will start the session if user is logged in it will show from or it will redirect to Login page
 
-    if(!isset($_SESSION['user'])) {
-        header("Location: Login.html");
-        exit();
+    if(!isset($_SESSION['user'])) {     //If the session does not exist, user is not logged in
+        header("Location: Login.html");     //Redirect non-login users to Login page
+        exit();     //Stops the futher script immediately.
     }
 ?>
 

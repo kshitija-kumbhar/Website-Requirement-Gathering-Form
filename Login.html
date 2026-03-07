@@ -56,17 +56,17 @@
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
 
-    <div id="result"></div>
+    <div id="result"></div>             <!--To show message if login fails using below jquery-->
 
     <script>
         $("#loginForm").submit(function(e) {
-            e.preventDefault();
+            e.preventDefault();     //Prevent form submission if form is reloaded and send data using Ajax
 
             $.ajax({
-                url:"login.php",
+                url:"login.php",    //It will send request to login.php - where it - connects to database, save data and return success or error message
                 type:"POST",
-                data:$(this).serialize(),
-                success:function(response){
+                data:$(this).serialize(),   //collects data this->current login data and serialize it
+                success:function(response){         //This function will run after PHP send response back from Login.php
                     if(response == "success"){
                         window.location = "Forms.php";
                     } else {
