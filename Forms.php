@@ -22,6 +22,11 @@
 
 </head>
 <body class="body">
+    <!-- Logout button -->
+    <div class="d-grid gap-2 d-md-flex justify-content-md-end m-3">
+    <a href="Logout.php" class="btn btn-primary">Logout</a>
+    </div>
+
     <form action="submit.php" method="POST" id="websiteForm">
     
     <!-- Requirement gathering card -->
